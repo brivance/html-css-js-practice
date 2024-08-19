@@ -1,0 +1,27 @@
+body {
+  color: #414141; /*dark gray*/
+  background-color: #EEEEEE; /*light gray*/
+  /*the px is for pixel, em is pronounced "m" and means the current font size (starting with 1)*/
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 28px; /*could also be 1.6em*/
+}
+
+/*the reason we have so many options here is because users might have different fonts */
+/*downloaded. the browser attempts to load the fonts starting from the left*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;                              /* Font weight goes from bold to normal */
+
+}
+
+/*removes underlines from links*/
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,66 @@
+/*it's good practice to override default margins with a predictable value (below with *):*/
+* {
+  margin: 0;
+  padding: 0;
+  /*converting all boxes to border-box, best practice*/
+  box-sizing: border-box;
+}
+
+h1, p {
+  background-color: #DDE0E3;    /* Light gray */
+}
+
+em, strong {
+  background-color: #B2D6FF;
+  /*display block (below) makes inline elements (em, strong) to turn into block elements*/
+  /*hardly ever a good idea, so we comment it out lol*/
+  /*display: block;*/
+}
+
+strong {
+  margin: 50px;
+}
+
+h1 {
+  padding: 50px;
+  border-bottom: 1px solid #5D6063;
+  /*also an option for whole border:;*/
+  /* border: 1px solid #5D6063; /* size style color */
+}
+
+p {
+  padding: 20px 0 20px 10px;
+
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+/*padding can also be defined as*/
+/*p {*/
+/*  padding-top: 20px;*/
+/*  padding-bottom: 20px;*/
+/*  padding-left: 10px;*/
+/*  padding-right: 10px;*/
+/*}*/
+/*or*/
+/*p {*/
+  /*padding: 20px 10px 20px 10px;  /* Top  Right  Bottom  Left */
+/*}*/
+
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  width: 200px;
+  /*box-sizing makes it so the width includes content, padding and border, rather than just content.*/
+  /*using box-sizing is considered best practice*/
+  box-sizing: border-box;
+  margin: 20px auto; /* Vertical  Horizontal */
+}
+body {
+  text-align: center;
+}
